@@ -1,0 +1,196 @@
+:root {
+  --primary-text: #202124;
+  --secondary-text: #5f6368;
+  --border-color: #dadce0;
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --tag-bg: #e8f0fe;
+  --tag-text: #1967d2;
+}
+
+body {
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  margin: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.header-container {
+  margin-bottom: 40px;
+}
+
+.header-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.header-container p {
+  font-size: 1.1rem;
+  color: var(--secondary-text);
+  max-width: 900px;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.grid-container {
+  display: grid;
+  /* Creates a responsive grid that mimics the slide's column layout */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+  text-decoration: none; /* Removes underline from links */
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--primary-text);
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: var(--secondary-text);
+  line-height: 1.5;
+  flex-grow: 1; /* Pushes tags to the bottom */
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.card-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto; 
+}
+
+.tag {
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.print-button {
+  background-color: var(--tag-text);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: inherit;
+  margin-top: 16px;
+  transition: opacity 0.2s;
+}
+
+.print-button:hover {
+  opacity: 0.9;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0.8cm;
+  }
+  
+  body {
+    padding: 0;
+    background-color: white;
+  }
+
+  .print-button {
+    display: none;
+  }
+
+  .header-container {
+    margin-bottom: 12px;
+  }
+
+  .header-container h1 {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  .header-container p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+    transform: none !important;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .card-header {
+    margin-bottom: 6px;
+  }
+
+  .card-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .card-title {
+    font-size: 0.85rem;
+  }
+
+  .card-desc {
+    font-size: 0.7rem;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .card-tags {
+    gap: 4px;
+  }
+
+  .tag {
+    padding: 2px 6px;
+    font-size: 0.6rem;
+  }
+}
