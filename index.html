@@ -116,8 +116,8 @@
 <body>
 
 <div class="header-container">
-  <h1>Science Amplification[cite: 1]</h1>
-  <p>Explore key Google platforms, catalogs, and communities to share, accelerate, and scale your research.[cite: 1]</p>
+  <h1>Science Amplification</h1>
+  <p>Explore key Google platforms, catalogs, and communities to share, accelerate, and scale your research.</p>
 </div>
 
 <div class="grid-container" id="cards-grid">
@@ -128,87 +128,87 @@
   // Data object mapped exactly from the source text 
   const dataResources = [
     {
-      title: "Cloud Marketplace[cite: 1]",
-      description: "Publish and distribute scientific or research apps and workflow solutions. One-click deployment for scalability without managing software distribution infrastructure.[cite: 1]",
+      title: "Cloud Marketplace",
+      description: "Publish and distribute scientific or research apps and workflow solutions. One-click deployment for scalability without managing software distribution infrastructure.",
       link: "https://cloud.google.com/marketplace",
-      icon: "https://placehold.co/40x40/4285F4/white?text=CM", 
+      icon: "https://www.gstatic.com/images/branding/productlogos/google_apps_marketplace/v7/192px.svg", 
       tags: ["Platform", "Deployment"]
     },
     {
-      title: "DataCommons[cite: 1]",
-      description: "Contribute and link institutional or domain datasets. Semantic harmonisation with global public data, standardised schema alignment, and amplified cross-disciplinary citations.[cite: 1]",
+      title: "DataCommons",
+      description: "Contribute and link institutional or domain datasets. Semantic harmonisation with global public data, standardised schema alignment, and amplified cross-disciplinary citations.",
       link: "https://datacommons.org",
-      icon: "https://placehold.co/40x40/34A853/white?text=DC",
+      icon: "https://placehold.co/40x40/4285F4/white?text=DC",
       tags: ["Data", "Citations"]
     },
     {
-      title: "BigQuery Datasets[cite: 1]",
-      description: "Query and share massive public datasets. Petabyte-scale SQL analytics in seconds, zero local storage overhead, and fully reproducible public data analysis.[cite: 1]",
+      title: "BigQuery Datasets",
+      description: "Query and share massive public datasets. Petabyte-scale SQL analytics in seconds, zero local storage overhead, and fully reproducible public data analysis.",
       link: "https://cloud.google.com/bigquery",
-      icon: "https://placehold.co/40x40/FBBC05/white?text=BQ",
+      icon: "https://icon.icepanel.io/GCP/svg/BigQuery.svg",
       tags: ["Analytics", "SQL"]
     },
     {
-      title: "Model Garden[cite: 1]",
-      description: "Discover, fine-tune, and deploy pretrained foundation models and custom architectures. Turnkey model serving, managed infrastructure, and a pathway from ML experimentation to production endpoints.[cite: 1]",
+      title: "Model Garden",
+      description: "Discover, fine-tune, and deploy pretrained foundation models and custom architectures. Turnkey model serving, managed infrastructure, and a pathway from ML experimentation to production endpoints.",
       link: "https://cloud.google.com/model-garden",
-      icon: "https://placehold.co/40x40/EA4335/white?text=MG",
+      icon: "https://www.gstatic.com/images/branding/productlogos/vertexai/v3/24px.svg",
       tags: ["Machine Learning", "Models"]
     },
     {
-      title: "Earth Engine Catalog[cite: 1]",
-      description: "Analyse planetary-scale geospatial, satellite, and environmental datasets. Direct access to petabytes of remote sensing data coupled with scalable cloud computation to model and share.[cite: 1]",
+      title: "Earth Engine Catalog",
+      description: "Analyse planetary-scale geospatial, satellite, and environmental datasets. Direct access to petabytes of remote sensing data coupled with scalable cloud computation to model and share.",
       link: "https://earthengine.google.com/",
-      icon: "https://placehold.co/40x40/34A853/white?text=EE",
+      icon: "https://www.gstatic.com/images/branding/productlogos/earth/v7/192px.svg",
       tags: ["Geospatial", "Data"]
     },
     {
-      title: "Kaggle[cite: 1]",
-      description: "Benchmark models, host challenges, and share datasets and code. Crowdsourced problem solving, global researcher visibility, and access to free GPU/TPU compute instances.[cite: 1]",
+      title: "Kaggle",
+      description: "Benchmark models, host challenges, and share datasets and code. Crowdsourced problem solving, global researcher visibility, and access to free GPU/TPU compute instances.",
       link: "https://kaggle.com",
-      icon: "https://placehold.co/40x40/4285F4/white?text=KG",
+      icon: "https://icon.icepanel.io/Technology/svg/Kaggle.svg",
       tags: ["Community", "Challenges"]
     },
     {
-      title: "NotebookLM[cite: 1]",
-      description: "Synthesize and communicate complex literature collections, project documentation, and lab notes.[cite: 1]",
+      title: "Gemini Notebook",
+      description: "Synthesize and communicate complex literature collections, project documentation, and lab notes.",
       link: "https://notebooklm.google.com",
-      icon: "https://placehold.co/40x40/9AA0A6/white?text=NLM",
+      icon: "https://www.gstatic.com/images/branding/productlogos/gemini_notebook/v2/192px.svg",
       tags: ["Productivity", "Literature"]
     },
     {
-      title: "YouTube[cite: 1]",
-      description: "Broadcast video abstracts, lab walkthroughs, and technical software tutorials. Global public outreach, multi-modal engagement for complex methodologies, and higher visibility across search engines.[cite: 1]",
+      title: "YouTube",
+      description: "Broadcast video abstracts, lab walkthroughs, and technical software tutorials. Global public outreach, multi-modal engagement for complex methodologies, and higher visibility across search engines.",
       link: "https://youtube.com",
-      icon: "https://placehold.co/40x40/EA4335/white?text=YT",
+      icon: "https://www.gstatic.com/images/branding/productlogos/youtube/v9/192px.svg",
       tags: ["Video", "Outreach"]
     },
     {
-      title: "Google Colab[cite: 1]",
-      description: "Prototype, run, and share interactive Python, R, or Julia workflows directly in the browser. Zero-setup, shareable Jupyter environments with free access to underlying GPU and TPU compute accelerators.[cite: 1]",
+      title: "Google Colab",
+      description: "Prototype, run, and share interactive Python, R, or Julia workflows directly in the browser. Zero-setup, shareable Jupyter environments with free access to underlying GPU and TPU compute accelerators.",
       link: "https://colab.research.google.com",
-      icon: "https://placehold.co/40x40/FBBC05/white?text=GC",
+      icon: "https://img.icons8.com/?size=512&id=lOqoeP2Zy02f&format=png",
       tags: ["Code", "Workflows"]
     },
     {
-      title: "Research Credits[cite: 1]",
-      description: "Fund compute-heavy experiments, large-scale storage, and cloud infrastructure for academic projects. Financial grant support that offsets cloud computing costs.[cite: 1]",
+      title: "Research Credits",
+      description: "Fund compute-heavy experiments, large-scale storage, and cloud infrastructure for academic projects. Financial grant support that offsets cloud computing costs.",
       link: "https://research.google/programs/research-credits/",
-      icon: "https://placehold.co/40x40/34A853/white?text=RC",
+      icon: "https://www.gstatic.com/images/branding/productlogos/google_cloud_2026/v1/192px.svg",
       tags: ["Funding", "Infrastructure"]
     },
     {
-      title: "TPU Research Cloud[cite: 1]",
-      description: "Train and benchmark compute-intensive deep learning models at scale. Free access to a cluster of over 1,000 Cloud TPU devices.[cite: 1]",
+      title: "TPU Research Cloud",
+      description: "Train and benchmark compute-intensive deep learning models at scale. Free access to a cluster of over 1,000 Cloud TPU devices.",
       link: "https://sites.research.google/trc/about/",
-      icon: "https://placehold.co/40x40/4285F4/white?text=TRC",
+      icon: "https://icon.icepanel.io/GCP/svg/Cloud-TPU.svg",
       tags: ["Compute", "Deep Learning"]
     },
     {
-      title: "GDG Communities[cite: 1]",
-      description: "Engage with regional and global Google Developer Groups with Science themes. Peer technical exchange, direct access to tool maintainers, and multidisciplinary collaborative networks.[cite: 1]",
+      title: "GDG Communities",
+      description: "Engage with regional and global Google Developer Groups with Science themes. Peer technical exchange, direct access to tool maintainers, and multidisciplinary collaborative networks.",
       link: "https://developers.google.com/community/gdg",
-      icon: "https://placehold.co/40x40/9AA0A6/white?text=GDG",
+      icon: "https://www.svgrepo.com/show/353810/google-developers.svg",
       tags: ["Community", "Networking"]
     }
   ];
